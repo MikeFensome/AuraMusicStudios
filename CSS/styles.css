@@ -172,10 +172,20 @@ h2 {
 
 .panel h3 {
     font-size: 24px;
+    background-color: #474747;
+    padding: 5px 10px;
+    border-radius: 30%;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    top: 5%;
+    left: 5%;
     margin: 0%;
+    opacity: 0;
+}
+
+.panel p {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
     opacity: 0;
 }
 
@@ -193,6 +203,11 @@ h2 {
 }
 
 .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active p {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
