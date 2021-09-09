@@ -1,0 +1,243 @@
+body {  
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.lightLink {
+    color: white;
+    text-decoration: none;
+}
+
+.lightLink:hover {
+    color: #cccccc;
+}
+
+@keyframes titlefade {
+    from {color: white;}
+    to {color: black;}
+}
+.company {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    animation-name: titlefade;
+    animation-duration: 6s;
+}
+.navbar {
+    background-color: white;
+}
+.navlogo {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.navbar-toggler {
+    margin-right: 2px;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+}
+
+#header {
+    padding: 12% 0 0;
+    background-color: white;
+}
+
+.heroarea {
+    overflow: hidden;
+    background-color: white;
+}
+.heroimage {
+    max-width: 50%;
+    margin-right: 30%;
+    transform:rotate(5deg);
+}
+
+@media only screen and (max-width:768px) {
+    .heroimage {
+        display: none;
+    }
+    .herotext h2 {
+        font-size: 1.75rem;
+        max-width: 80%;
+        padding-top: 15%;
+    }
+}
+
+.herotext {
+   /* max-width: 40%; */
+    padding-left: 10%;
+}
+
+.straparea {
+    /* background-image: linear-gradient(to right, #06001e,#17005c, #0a4b24, #86cf87, #17005c); */
+    background-color: #474747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 7px solid;
+    border-image-source: linear-gradient(to right, #06001e,#17005c, #0a4b24, #86cf87, #17005c);
+    border-image-slice: 1;
+}
+
+.straptext {
+    color: white;
+    font-weight: bold;
+    margin-top: .8%;
+}
+
+.strapbutton {
+    margin-left: 30px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #474747;
+}
+
+.featurebox {
+    background-color: #06001e;
+    display: flex;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.featureimage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+
+.featuretext {
+    padding: 7% 20%;
+    text-align: center;
+    color: #cccccc;
+}
+.featuretitle {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.featurelink {
+    display: block;
+    background-color: #06001e;
+    text-align: end;
+    height: 40px;
+    padding-right: 20px;
+    margin-right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.quote {
+    padding: 6% 15%;
+    height: 20vh;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-left: 5%;
+}
+
+@media (max-width: 800px){
+    .slider {
+        flex-direction: column;
+        height: 50vh;
+    }
+}
+
+.slider > h3 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 5%;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    background-color: #474747;
+    padding: 5px 10px;
+    border-radius: 30%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: 0%;
+    opacity: 0;
+}
+
+.panel p {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    opacity: 0;
+}
+
+.panel audio {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    margin: 0%;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active audio {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+#footer {
+    height: 15vh;
+    margin-top: 3em;
+    background-color: #17005c;
+    color: white;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
