@@ -52,6 +52,7 @@ body {
 }
 .heroimage {
     max-width: 50%;
+    margin-right: 30%;
     transform:rotate(5deg);
 }
 
@@ -146,6 +147,7 @@ h2 {
 
 .slider {
     display: flex;
+    flex-direction: row;
     width: 90vw;
     margin-left: 5%;
 }
@@ -226,6 +228,16 @@ h2 {
 
 #footer {
     height: 15vh;
+    margin-top: 3em;
     background-color: #17005c;
+    color: white;
 }
 
+#footer ul {
+    list-style: none;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
