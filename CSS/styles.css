@@ -150,6 +150,13 @@ h2 {
     margin-left: 5%;
 }
 
+@media (max-width: 800px){
+    .slider {
+        flex-direction: column;
+        height: 50vh;
+    }
+}
+
 .slider > h3 {
     position: absolute;
     margin-top: -40px;
