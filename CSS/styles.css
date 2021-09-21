@@ -155,7 +155,7 @@ h2 {
     flex-direction: row;
     width: 90vw;
     margin-left: 5%;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 .slider > h3 {
@@ -168,7 +168,7 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 50vh;
     border-radius: 50px;
     color: white;
     cursor: pointer;
