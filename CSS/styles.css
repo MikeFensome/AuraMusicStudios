@@ -142,7 +142,7 @@ h2 {
 
 .quote {
     padding: 6% 15%;
-    height: 20vh;
+    height: 25vh;
 }
 
 #quotecarousel {
@@ -150,23 +150,18 @@ h2 {
 }
 
 .slider {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 90vw;
     margin-left: 5%;
-}
-
-@media (max-width: 800px){
-    .slider {
-        flex-direction: column;
-        height: 50vh;
-    }
+    margin-top: auto;
 }
 
 .slider > h3 {
     position: absolute;
-    margin-top: 0px;
-    margin-left: 5%;
+    top: 0px;
+    left: 5%;
 }
 
 .panel {
@@ -231,11 +226,32 @@ h2 {
     transition: opacity 0.3s ease-in 0.4s;
 }
 
+@media (max-width: 800px){
+    .slider {
+        flex-direction: column;
+        height: 50vh;
+        width: auto;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .panel {
+        margin-top: 5px;
+    }
+
+    .first-panel {
+        margin-top: 35px;
+    }
+}
+
 #footer {
-    height: 15vh;
+    /* height: 20vh; */
     margin-top: 3em;
+    padding-bottom: 30px;
     background-color: #17005c;
     color: white;
+    font-weight: bold;
+    font-size: small;
 }
 
 #footer ul {
@@ -245,4 +261,15 @@ h2 {
 #footer a {
     text-decoration: none;
     color: white;
+}
+
+.footer-zone {
+    padding-left: 20%;
+    padding-top: 5vh;
+}
+
+.socials {
+    font-size: 2rem;
+    margin-left: 30px;
+    padding-right: 10px;
 }
