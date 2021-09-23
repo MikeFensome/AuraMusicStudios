@@ -42,11 +42,10 @@ body {
 }
 
 #header {
-    padding: 12% 0 0;
+    padding: 12% 0 4%;
 }
 
 .heroarea {
-    overflow: hidden;
     height: 30vh;
 }
 .heroimage {
@@ -55,11 +54,17 @@ body {
     transform:rotate(5deg);
     position: absolute;
     left: 60%;
-    top: 6%;
+    bottom: 30%;
     z-index: -1;
 }
 
-@media only screen and (max-width:768px) {
+@media (max-width:1200px) {
+    .heroimage {
+        bottom: 40%;
+    }
+    
+}
+@media only screen and (max-width:850px) {
     .heroimage {
         display: none;
     }
