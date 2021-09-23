@@ -43,17 +43,20 @@ body {
 
 #header {
     padding: 12% 0 0;
-    background-color: white;
 }
 
 .heroarea {
     overflow: hidden;
-    background-color: white;
+    height: 30vh;
 }
 .heroimage {
-    max-width: 50%;
-    margin-right: 30%;
+    width: 30%;
+    /* margin-right: 30%; */
     transform:rotate(5deg);
+    position: absolute;
+    left: 60%;
+    top: 6%;
+    z-index: -1;
 }
 
 @media only screen and (max-width:768px) {
@@ -205,6 +208,7 @@ h2 {
     left: 30%;
     margin: 0%;
     opacity: 0;
+    visibility: hidden;
 }
 
 .panel.active {
@@ -224,9 +228,13 @@ h2 {
 .panel.active audio {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    visibility: visible;
 }
 
 @media (max-width: 800px){
+    .quote {
+        height: 25vh;
+    }
     .slider {
         flex-direction: column;
         height: 50vh;
@@ -242,6 +250,10 @@ h2 {
     .first-panel {
         margin-top: 35px;
     }
+
+    .panel audio {
+        left: 10%;
+    };
 }
 
 #footer {
