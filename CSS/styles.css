@@ -47,23 +47,32 @@ body {
 
 .heroarea {
     height: 30vh;
+    position: relative;
 }
 .heroimage {
-    width: 30%;
+    width: 20%;
     /* margin-right: 30%; */
-    transform:rotate(5deg);
+    /* transform:rotate(5deg); */
     position: absolute;
-    left: 60%;
-    bottom: 30%;
+    right: 20%;
+    top: 15%;
     z-index: -1;
 }
 
-@media (max-width:1200px) {
+@media (max-height:1460px) {
     .heroimage {
-        bottom: 40%;
+        top: -10%;
     }
-    
+
 }
+
+@media (max-height:800px) {
+    .heroimage {
+        top: -80%;
+    }
+
+}
+
 @media only screen and (max-width:850px) {
     .heroimage {
         display: none;
@@ -281,7 +290,7 @@ h2 {
 }
 
 .footer-zone {
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 5vh;
 }
 
@@ -289,4 +298,36 @@ h2 {
     font-size: 2rem;
     margin-left: 30px;
     padding-right: 10px;
+}
+
+/* About page */
+
+.aboutHero {
+    text-align: center;
+}
+
+.aboutHeaderImage {
+    max-width: 80%;
+}
+
+.aboutAura, .aboutOwner {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutOwner {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #06001e;
+    color: #fff;
+}
+
+.aboutTitle {
+    color: #474747;
+}
+
+.aboutOwner > .aboutTitle {
+    color: #fff;
 }
